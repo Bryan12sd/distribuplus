@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
+import 'theme/app_theme.dart';
+import 'widgets/app_drawer.dart';
+import 'screens/home_screen.dart';
+import 'screens/login_screen.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const DistribuPlusApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class DistribuPlusApp extends StatelessWidget {
+  const DistribuPlusApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      title: 'DistribuPlus',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.lightTheme,
+      home: const LoginScreen(),
     );
   }
 }
