@@ -5,6 +5,9 @@ import '../screens/sales_screen.dart';
 import '../screens/reports_screen.dart';
 import '../screens/map_screen.dart'; */
 import '../screens/profile_screen.dart';
+import '../screens/product_list_screen.dart';
+import '../screens/sale_form_screen.dart';
+import '../screens/sale_list_screen.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -25,13 +28,13 @@ class AppDrawer extends StatelessWidget {
             ),
           ),
           _drawerItem(context, Icons.home, 'Inicio', const HomeScreen()),
-          /*  _drawerItem(
-              context, Icons.inventory, 'Inventario', const InventoryScreen()),
+          _drawerItem(context, Icons.inventory, 'Inventario',
+              const ProductListScreen()),
           _drawerItem(
-              context, Icons.shopping_cart, 'Ventas', const SalesScreen()),
-          _drawerItem(
-              context, Icons.bar_chart, 'Reportes', const ReportsScreen()),
-          _drawerItem(context, Icons.map, 'Mapa', const MapScreen()), */
+              context, Icons.shopping_cart, 'Ventas', const SalesListScreen()),
+          _drawerItem(context, Icons.bar_chart, 'Registrar Venta',
+              const SaleFormScreen()),
+          /* _drawerItem(context, Icons.map, 'Mapa', const MapScreen()), */
           _drawerItem(context, Icons.person, 'Perfil', const ProfileScreen()),
         ],
       ),
