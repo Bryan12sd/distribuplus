@@ -8,6 +8,7 @@ import '../screens/profile_screen.dart';
 import '../screens/product_list_screen.dart';
 import '../screens/sale_form_screen.dart';
 import '../screens/sale_list_screen.dart';
+import '../screens/api_screen.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -34,6 +35,8 @@ class AppDrawer extends StatelessWidget {
               context, Icons.shopping_cart, 'Ventas', const SalesListScreen()),
           _drawerItem(context, Icons.bar_chart, 'Registrar Venta',
               const SaleFormScreen()),
+          _drawerItem(context, Icons.cloud_download, 'API', const ApiScreen()),
+
           /* _drawerItem(context, Icons.map, 'Mapa', const MapScreen()), */
           _drawerItem(context, Icons.person, 'Perfil', const ProfileScreen()),
         ],
