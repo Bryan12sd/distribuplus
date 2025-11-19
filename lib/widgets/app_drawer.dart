@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import '../screens/home_screen.dart';
 /* import '../screens/inventory_screen.dart';
 import '../screens/sales_screen.dart';
-import '../screens/reports_screen.dart';
-import '../screens/map_screen.dart'; */
+import '../screens/reports_screen.dart'; */
+import '../screens/map_screen.dart';
 import '../screens/profile_screen.dart';
 import '../screens/product_list_screen.dart';
 import '../screens/sale_form_screen.dart';
@@ -36,8 +36,7 @@ class AppDrawer extends StatelessWidget {
           _drawerItem(context, Icons.bar_chart, 'Registrar Venta',
               const SaleFormScreen()),
           _drawerItem(context, Icons.cloud_download, 'API', const ApiScreen()),
-
-          /* _drawerItem(context, Icons.map, 'Mapa', const MapScreen()), */
+          _drawerItem(context, Icons.map, 'Mapa', const MapScreen()),
           _drawerItem(context, Icons.person, 'Perfil', const ProfileScreen()),
         ],
       ),

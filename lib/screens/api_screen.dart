@@ -30,7 +30,10 @@ class ApiScreenState extends State<ApiScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Inicio')),
+      appBar: AppBar(
+        title: const Text("Cambio de Dólar"),
+        backgroundColor: Color(0xFF001F3F),
+      ),
       drawer: const AppDrawer(),
       body: Center(
         child: cargando
